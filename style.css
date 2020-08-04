@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url('assets/fonts/DancingScript.ttf');
+}
+
+/* Global Styling */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Open Sans',
+        sans-serif;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'DancingScript',
+        sans-serif;
+}
+
+p,
+span,
+b,
+i,
+label,
+input,
+textarea,
+::placeholder {
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+::selection {
+    background-color: #023E8A;
+    color: #fff;
+}
+
+/* Main Content Styling */
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), #0076b65b),
+        url(assets/images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 8rem;
+}
+
+.hero p {
+    margin: 1rem 15rem;
+}
+
+/* End Of Hero Section Styling */
+
+/* Navbar Section Styling */
+.navbar {
+    height: auto;
+    width: 70%;
+    background-color: #fff;
+    border-radius: .5rem;
+    margin: -50px auto;
+    box-shadow: 0 10px 10px rgba(138, 138, 138, 0.171);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+.nav-item ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-item li {
+    margin: 15px;
+
+}
+
+
+.nav-item li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #023E8A;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-item li a:hover {
+    border: 2px solid #023E8A;
+    color: #023E8A;
+    background-color: #fff;
+    transition: .2s;
+
+}
+
+/* End Of Navbar Section Styling */
+
+/* Featured Product Section */
+#featured {
+    margin-top: 100px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#featured h2 {
+    font-size: 3rem;
+}
+
+.featured-product {
+    height: 400px;
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: .5rem;
+}
+
+.featured-image {
+    display: block;
+    background-color: #fff;
+}
+
+.featured-image:hover {
+    margin-top: -15px;
+    transition: .3s;
+    box-shadow: none;
+}
+
+.featured-one,
+.featured-two,
+.featured-three {
+    height: auto;
+    width: 300px;
+    margin: 70px 20px;
+    justify-content: space-between;
+    display: block;
+    box-shadow: 0 40px 20px rgba(121, 119, 119, 0.171);
+    border-radius: .5rem;
+
+}
+
+.featured-description {
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+
+/* Icon Box Section Styling */
+.icon-box-section {
+    background-color: #fff;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5rem;
+}
+
+.icon-box-section i {
+    font-size: 4rem;
+    color: #023E8A;
+    margin-bottom: 15px;
+}
+
+.icon {
+    margin: 0 1rem;
+}
+
+.icon h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.buynow {
+    text-decoration: none;
+    color: #fff;
+    background-color: #023E8A;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+.buynow:hover {
+    border: 2px solid #023E8A;
+    color: #023E8A;
+    background-color: #fff;
+    transition: .2s;
+}
+
+/* Products Section */
+#products {
+    padding: 100px 0;
+}
+
+#products h2 {
+    font-size: 3rem;
+}
+
+.products-grid img {
+    height: 200px;
+    width: 200px;
+    margin: 50px 50px;
+    cursor: pointer;
+
+}
+
+/* Testimonial Section Styling */
+#testimonial {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+#testimonial h2 {
+    font-size: 3rem;
+}
+
+#testimonial h3 {
+    font-size: 1.5rem;
+}
+
+#testimonial p {
+    margin-bottom: 20px;
+}
+
+.customers {
+    background-color: #fff;
+    width: 350px;
+    margin: 20px;
+    padding: 0 20px;
+    display: inline-block;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(95, 95, 95, 0.171);
+}
+
+
+.customers:hover {
+    background-color: #023E8A;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+.customers img {
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 10px 10px rgba(138, 138, 138, 0.171);
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #ccc;
+    padding: 20px;
+}
+
+.customers:hover .quote-icon {
+    color: #fff;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 100px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(70deg, rgba(0, 0, 0, 0.541), rgba(32, 32, 32, 0.459)), url(assets/images/contact.jpg);
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 3rem;
+}
+
+#contact p {
+    margin-bottom: 30px;
+}
+
+#contact label {
+    text-align: left;
+}
+
+#contact input {
+    margin: 20px 0;
+    padding: 15px 100px;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+
+}
+
+#contact textarea {
+    margin: 20px 0;
+    padding: 50px 110px;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+
+}
+
+#contact button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #023E8A;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    font-size: 18px;
+}
+
+#contact button:hover {
+    border: 2px solid #023E8A;
+    color: #023E8A;
+    background-color: #fff;
+    transition: .2s;
+}
+
+/* Footer Section Styling */
+.site-footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #023E8A;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+/* Responsive Codes */
+
+@media screen and (max-width: 810px) {
+    body {
+        font-size: 16px;
+    }
+
+    p,
+    span,
+    b,
+    i,
+    label,
+    input,
+    textarea,
+    ::placeholder {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .navbar {
+        width: 80%;
+        height: 70px;
+    }
+
+    .nav-item li {
+        margin: 8px;
+    }
+
+    .nav-item li a {
+        padding: 8px 5px;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 10px;
+
+    }
+
+    #featured {
+        margin-top: 50px;
+        padding: 50px 0;
+        height: 550px
+    }
+
+    #featured h2 {
+        font-size: 2rem;
+    }
+
+    #featured p {
+        margin: 5px 10px;
+    }
+
+    .featured-one,
+    .featured-two,
+    .featured-three {
+        width: 85%;
+        margin: 50px auto;
+
+    }
+
+    .buynow {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .featured-product {
+        flex-flow: column;
+        width: auto;
+    }
+
+    .icon-box-section {
+        height: auto;
+        flex-flow: column;
+        padding: 50px 0;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 410%;
+        display: block;
+    }
+
+    #products h2 {
+        font-size: 2rem;
+    }
+
+    #products p {
+        margin: 0 10px;
+    }
+
+    #products img {
+        width: 50%;
+        margin: 50px;
+    }
+
+
+
+
+    #testimonial h2 {
+        font-size: 2rem;
+    }
+
+    #testimonial p {
+        margin: 10px;
+    }
+
+    .icon {
+        margin: 20px 1rem;
+    }
+
+    .customers {
+        width: auto;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        margin: 10px 20px;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 15px 50px;
+    }
+
+    #contact label {
+        font-weight: bold;
+    }
+}
