@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'DancingScript';
-    src: url(assets/fonts/DancingScript.ttf);
+    src: url('assets/fonts/DancingScript.ttf');
 }
 
 /* Global Styling */
@@ -333,7 +333,9 @@ img {
 
 #contact input {
     margin: 20px 0;
-    padding: 15px 100px;
+    height: 20px;
+    width: 25%;
+    padding: 20px;
     border-radius: .5rem;
     outline: none;
     border: none;
@@ -342,7 +344,9 @@ img {
 
 #contact textarea {
     margin: 20px 0;
-    padding: 50px 110px;
+    height: 100px;
+    width: 25%;
+    padding: 20px;
     border-radius: .5rem;
     outline: none;
     border: none;
@@ -518,7 +522,7 @@ img {
 
     #contact input,
     #contact textarea {
-        padding: 15px 50px;
+        width: 80%;
     }
 
     #contact label {
